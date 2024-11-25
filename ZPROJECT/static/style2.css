@@ -1,0 +1,47 @@
+body{
+    height: 90vh;
+    width: 100%;
+    /* background-image: url(assets/pasar3.jpg); */
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    position: sticky;
+    background-color: black;
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 20px 100px;
+}
+
+
+.nav-logo{
+    background-image: url(assets/logo.png);
+    width: 165px;
+    height: 60px;
+    background-position: center ;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.nav-kanan{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.nav-kanan a{
+    font-weight: 0;
+    text-decoration: none;
+    color: bisque;
+    padding: 30px;
+}
+.nav-kanan a:hover{
+    color: orangered;
+    transition-duration: .7s;
+    /* padding: 30px; */
+}

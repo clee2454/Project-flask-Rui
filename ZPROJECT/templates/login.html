@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style3.css') }}">
+  <!-- <h1>LOGIN</h1> -->
+  <div class="login">
+    <div class="kiri">
+      <div class="gmbr"></div>
+    </div>
+    <div class="kanan">
+      <div class="upper">
+        <h1>Welcome</h1>
+        <h3 style="color: grey;" >Please enter your login credentials</h3>
+      </div>
+      <form  action="/aksi_login" method="post">
+      <div class="lower">
+
+        <div class="mb-3" style="display: flex; flex-direction: column; padding-bottom: 30px; " >
+          <label for="exampleInputEmail1" class="form-label "  >Username</label>
+          <input style=" border-width: 1px; border-radius: 10px; width: 330px; height: 35px; margin-top: 5px; padding-left: 7px; " placeholder="Masukkan username"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" required>
+        </div>
+        <div class="mb-3"style="display: flex; flex-direction: column;
+          <label for="exampleInputPassword1" class="form-label "  >Password</label>
+          <input style=" border-width: 1px; border-radius: 10px; width: 330px; height: 35px; margin-top: 5px; padding-left: 7px; " placeholder="Masukkan password"  type="password" class="form-control" id="exampleInputPassword1"name="password" required>
+        </div>
+        <div class="buttons">
+          <button onclick="lupa()" class="lupa" ><p>Lupa password?</p></button>
+          <button type="submit" class="submit">sign in</button>
+          <div class="signup">Don't have an account? <a href="#" class="daftar" >sign up</a></div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+    
+</body>
+  <script>
+    function lupa() { alert("Username = admin , Password = 1234")}
+  </script>
+</html>

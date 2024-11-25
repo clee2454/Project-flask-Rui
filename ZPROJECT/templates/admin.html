@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block konten %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style4.css') }}">
+
+<form action="/simpan" method="post" >
+  <div class="container">
+    <h1 style="text-align: center;" >Input Data Pasar</h1>
+
+    <div class="input">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nama pasar</label>
+        <input type="text" name="nama_pasar" placeholder="Masukan nama pasar"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required><br>
+        
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Lokasi pasar</label>
+        <input type="text" name="lokasi_pasar"  placeholder="Lokasi pasar" class="form-control" id="exampleInputPassword1"required><br>
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputPassword2" class="form-label">Tahun berdiri</label>
+        <input type="number" name="tahun_berdiri" placeholder="Masukan Tahun"class="form-control" id="exampleInputPassword2" required></textarea><br>
+      </div>
+      
+      <div>
+        <label for="exampleInputPassword3" class="form-label">Rata-rata pengunjung</label>
+        <input type="number" name="rata_rata" placeholder="rata_rata" class="form-control" id="exampleInputPassword3"required><br>
+      </div>
+    </div>
+    
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
+  
+  
+  
+  <!-- <h1><a href="{{ url_for('logout' ) }}"class="link-danger">logout🚪</a></h1> -->
+</div>
+
+
+{% endblock %}
+
+ 

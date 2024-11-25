@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.vidio{
+    width: 100%;
+    /* background-image: url(assets/bg.gif); */
+    background-image: url(assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.intro{
+    height: 90vh;
+    margin: 50px;
+    display: flex;
+    /* background-image: url(assets/bg.gif); */
+    color: beige;
+}
+.pasar-kiri h1{
+    font-size: 40pt;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.pasar-kiri{
+    width: 50%;
+    padding: 50px;
+    padding-top: 0;
+}
+.pasar-kiri p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-left: 20px;
+}
+.gmbr2{
+    border-radius: 30px;
+    width:500px;
+    height: 400px;
+    background-image: url(assets/pasar1.jpg);
+}
+

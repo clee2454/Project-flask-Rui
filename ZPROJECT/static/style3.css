@@ -1,0 +1,102 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: black;
+}
+.login{
+    display: flex;
+    height: 100vh;
+}
+.kiri{
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/bg2.gif);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+.kiri .gmbr{
+    /* background-image: url(assets/bg2.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.kanan{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.upper{
+    margin-right: 30px;
+}
+.lower{
+    font-size: 15pt;
+    margin-top: 30px ;
+}
+::placeholder{
+    /* padding-left: 6px; */
+    opacity: 0.7;
+    font-style: italic;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 90px; */
+}
+button.lupa{
+    font-size: 10pt;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(11, 150, 251);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    transition-duration: .7s ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.lupa:hover{
+    /* background-color: rgb(11, 150, 251) ; */
+    opacity: 0.5;
+    transition-duration: .7s ;
+}
+
+button.submit{
+    margin-top: 20px;
+    border-radius: 10px ;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    font-size: 12pt;
+    border: none;
+    background-color:black;
+    box-shadow: 0px 0 5px 0px black;
+    transition-duration: .7s;
+    cursor: pointer;
+}
+button.submit:hover{
+    opacity: .7;
+
+}
+.signup{
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 20px;
+    color: grey;
+}
+a.daftar{
+    display: inline-block;
+    color: rgb(43, 34, 34);
+}

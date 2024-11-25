@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA SISWA</h1>
+    <form action="/aksiupdate" method="post" >
+        <input type="hidden" name="id_pasar" placeholder="Enter id" value="{{ value[0] }}" > 
+        <input type="text" name="nama_pasar" placeholder="Enter nama pasar  " value="{{ value[1] }}" ><br>
+        <input type="text" name="lokasi_pasar" placeholder="Enter lokasi pasar  " value="{{ value[2] }}" ><br>
+        <input type="number" name="tahun_berdiri" placeholder="Enter tahun" value="{{ value[3] }}"><br>
+        <input type="number" name="rata_rata" placeholder="Enter rata_rata" value="{{ value[4] }}"><br>
+        <button type="submit">Update.</button>
+    </form>
+{% endblock %}
